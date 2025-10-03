@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  databricks-mcp:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: databricks-mcp:latest
+    container_name: databricks-mcp
+    stdin_open: true
+    tty: true
+    volumes:
+      # Mount the connections file from host
+      - ./databricks_connections.json:/app/databricks_connections.json:ro
+    environment:
+      # Optional: Override with environment variables if preferred
+      # - DATABRICKS_HOST=${DATABRICKS_HOST}
+      # - DATABRICKS_TOKEN=${DATABRICKS_TOKEN}
+    # MCP uses stdio, no ports needed
+    # Command is defined in Dockerfile

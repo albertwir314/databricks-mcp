@@ -1,0 +1,15 @@
+{
+    "mcpServers": {
+        "databricks": {
+            "command": "docker",
+            "args": [
+                "run",
+                "--rm",
+                "-i",
+                "-v",
+                "C:\\Users\\YourUsername\\path\\to\\databricks-mcp\\databricks_connections.json:/app/databricks_connections.json:ro",
+                "databricks-mcp:latest"
+            ]
+        }
+    }
+}

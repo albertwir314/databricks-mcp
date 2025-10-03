@@ -1,0 +1,20 @@
+{
+    "connections": {
+        "i32": {
+            "name": "i32",
+            "host": "https://<databricks instance>/",
+            "token": "<databricks token>"
+        },
+        "whetstonedistr": {
+            "name": "whetstonedistr",
+           "host": "https://<databricks instance>/",
+            "token": "<databricks token>"
+        },
+        "kerix": {
+            "name": "kerix",
+            "host": "https://<databricks instance>/",
+            "token": "<databricks token>"
+
+        }
+    }
+}
